@@ -1,0 +1,100 @@
+body {
+  font-family: Helvetica;
+  background:  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+  url(https://s-media-cache-ak0.pinimg.com/736x/9f/da/1c/9fda1c5b0b92d781c78e837c7ff7d07b.jpg);
+}
+
+#football {
+  max-height: 5%;
+  max-width: 5%;
+  position: absolute;
+  animation: foozball;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  left: 48px;
+  bottom: 50px;
+}
+
+@keyframes foozball {
+  0% {left: 48px; bottom: 50px}
+  20%{left: 200px; bottom: 600px;}
+  40%{left:600px; bottom: 400px;}
+  60%{left:300px; bottom: 230px;}
+  80%{left:1050px; bottom: 430px;}
+  100% {left: 48px; bottom: 50px;}
+}
+
+/*#b{
+ position: absolute;
+ left: 100px;
+ top: 100px;
+ width: 100px;
+ height: 100px;
+ background-color: #fce;   
+}*/
+
+#badge {
+  max-height: 5%;
+  max-width: 5%;
+}
+
+#bullets {
+  margin-left: 50px;
+  font-size: 55px; 
+}
+
+a {
+  color: white;
+  text-shadow: 5px 4px 0px rgb(84, 84, 150);
+}
+
+li {
+  margin: 0 0 20px 0;
+}
+
+ul {
+  list-style-image: url('https://static-cdn.jtvnw.net/emoticons/v1/150608/2.0')
+}
+
+
+#main{
+  font-size: 28px;
+  margin-left: 37px;
+  background: rgba(119, 119, 119, 0.34);
+  color: gold;
+}
+
+#dog{
+  height:400px;
+  width: 400px;
+  border-radius: 400px;
+  animation: slidein;
+  animation-duration:1.5s;
+  margin-left: 0px;
+}
+
+#dogegreet{
+  font-size:50px;
+  animation: slowgrow;
+  color: gold;
+  background: rgba(0,0,0,0.4);
+  animation-duration:1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slowgrow {
+  0% {transform: none;}
+  50%{color: transparent;}
+  100% {transform: none;}
+}
+
+@keyframes slidein {
+  0% {margin-left: 1032px;
+    filter: brightness(0%)}
+    100% {transform: none;}
+  }
+}
+
